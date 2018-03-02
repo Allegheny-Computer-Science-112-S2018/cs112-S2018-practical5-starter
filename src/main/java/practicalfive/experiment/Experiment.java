@@ -31,12 +31,7 @@ public class Experiment {
     System.out.println("Results of an experiment campaign with " + insertionSort.getName() + ":\n");
     System.out.println(insertionSortResultsTable.toString());
     System.out.println();
-    // Create a QuickSort and run it in a campaign
-    QuickSort quickSort = new QuickSort();
-    ResultsTable quickSortResultsTable = runSorterCampaign.run(quickSort);
-    System.out.println();
-    System.out.println("Results of an experiment campaign with " + quickSort.getName() + ":\n");
-    System.out.println(quickSortResultsTable.toString());
+    // TODO: Create a QuickSort and run it in a campaign
   }
 
 }
