@@ -164,7 +164,7 @@ if [ "$CHECK" = true ]; then
   determine_exit_code $?
   # --> GatorGrader CHECK: the repository contains at least three commits (+3
   # for the current number in the starter repository)
-  python3 gatorgrader/gatorgrader.py --nowelcome --commits 13
+  python3 gatorgrader/gatorgrader.py --nowelcome --commits 16
   determine_exit_code $?
  echo ""
   printf "%s\n" "${blu}... Finished checking with GatorGrader${end}"
