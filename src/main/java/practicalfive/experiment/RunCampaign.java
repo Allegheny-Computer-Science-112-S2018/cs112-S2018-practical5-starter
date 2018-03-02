@@ -40,7 +40,7 @@ public class RunCampaign implements Campaign {
     int campaignRound = 0;
     int currentInputSize = INPUT_SIZE_START;
     ResultsTable results = new ResultsTable(CAMPAIGN_LENGTH);
-    System.out.println("Starting a campaign of experiments with " + sort.getName() + " ...");
+    // TODO: Add the label indicating that the campaign is starting
     while (campaignRound < CAMPAIGN_LENGTH) {
       int[] generatedInput = generateRandomData(currentInputSize);
       long timeBefore = System.currentTimeMillis();
@@ -53,7 +53,7 @@ public class RunCampaign implements Campaign {
       currentInputSize = currentInputSize * INPUT_GROWTH_FACTOR;
       campaignRound++;
     }
-    System.out.println("... Finishing a campaign of experiments with " + sort.getName());
+    // TODO: Add the label indicating that the campaign is finished
     return results;
   }
 
